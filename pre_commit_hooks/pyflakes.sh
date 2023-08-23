@@ -12,7 +12,7 @@ WARN='\033[0;33m'
 STD='\033[0m'
 
 if [ $? -ne 0 ]; then
-    echo "${WARN}[WARN]${STD} Pyflakes found some violations. Please fix them or force the commit with --no-verify"
-    echo "$stdout_xargs"
-    exit 1
+echo "${WARN}[WARN]${STD} Pyflakes found some violations. Please fix them or force the commit with --no-verify"
+echo "$stdout_xargs"
+exit 1
 fi
