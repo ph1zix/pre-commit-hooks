@@ -40,8 +40,8 @@ Replace the `rev` value in your `.pre-commit.config.yaml` file with the hash and
 
 ## Links
 
-Official website: https://pre-commit.com/
-Local development of a hook: https://pre-commit.com/#developing-hooks-interactively
-Some out of the box hooks: https://github.com/pre-commit/pre-commit-hooks/tree/main/pre_commit_hooks
+- Official website: https://pre-commit.com/
+- Local development of a hook: https://pre-commit.com/#developing-hooks-interactively
+- Some out of the box hooks: https://github.com/pre-commit/pre-commit-hooks/tree/main/pre_commit_hooks
 
 Feel free to improve this README.md to help others better understand the setup process.
