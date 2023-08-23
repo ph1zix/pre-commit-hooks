@@ -2,12 +2,7 @@
 
 echo "[INFO] Checking if pyflakes is installed.."
 alias python=python3 
-if python -c "import pyflakes" &> /dev/null; then
-    echo "[INFO] Pyflakes is already installed"
-else 
-    echo "[INFO] Installing pyflakes:"
-    pip install pyflakes
-fi
+python -c 'import pyflakes' 2>/dev/null && echo "python pyflakes modules installed" || echo "python pyflakes modules not installed"
 
 echo "[INFO] Running pyflakes.sh on working directory.."
 
