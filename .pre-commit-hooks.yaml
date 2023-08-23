@@ -9,4 +9,4 @@
     description: replaces double quoted strings with single quoted strings.
     entry: ./pre_commit_hooks/double-quote-string-fixer.py
     language: python
-    types: [python]
+    stages: [commit, push, manual]
