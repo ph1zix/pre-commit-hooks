@@ -5,8 +5,8 @@ alias python=python3
 if python -c "import pyflakes" &> /dev/null; then
     echo "[INFO] Pyflakes is already installed"
 else 
-    echo "[INFO] Will install pyflakes with pip.."
-    pip -m install pyflakes
+    echo "[INFO] Installing pyflakes:"
+    pip install pyflakes
 fi
 
 echo "[INFO] Running pyflakes.sh on working directory.."
