@@ -4,3 +4,9 @@
     entry: ./pre_commit_hooks/pyflakes.sh
     language: script
     stages: [commit, push, manual]
+-   id: double-quote-string-fixer
+    name: fix double quoted strings
+    description: replaces double quoted strings with single quoted strings.
+    entry: double-quote-string-fixer
+    language: python
+    types: [python]
