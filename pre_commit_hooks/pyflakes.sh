@@ -1,16 +1,16 @@
 #!/bin/bash
 
 echo "[INFO] Checking if pyflakes is installed.."
-is_pyflakes_installed="$(pip list | grep -F pyflakes)"
+pyflakes_is_installed="$(pip list | grep -F pyflakes)"
 
-if [[ -n $is_pyflakes_installed ]]
+if [[ -n $pyflakes_is_installed ]]
 then
-    echo "pyflakes module already installed"
+    echo "[INFO] Pyflakes module is already installed"
 else
     pip install pyflakes
 fi
 
-echo "[INFO] Running pyflakes.sh on working directory.."
+echo "[INFO] Running pyflakes.sh from pre-commit-hooks on working directory.."
 find_cmd="find $PWD -type d -name '.env' -prune -o -type f -name '*.py' -print"
 xargs_cmd="xargs pyflakes"
 
