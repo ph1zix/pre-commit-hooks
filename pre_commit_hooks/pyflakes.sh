@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "[INFO] Checking if pyflakes is installed.."
-is_pyflakes_installed="${pip list | grep -F pyflakes}"
+is_pyflakes_installed="$(pip list | grep -F pyflakes)"
 
 if [[ -n $is_pyflakes_installed ]]
 then
